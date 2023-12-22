@@ -368,7 +368,7 @@ export class ResolveRunner implements Types.IResolveRunner {
   };
 
   public atMaxUriDepth = () => {
-    return this.uriStack.length >= 100;
+    return this.uriStack.length >= 10000;
   };
 
   public lookupUri = async (opts: {
